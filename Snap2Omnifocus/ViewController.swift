@@ -14,18 +14,22 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        imagePicker.delegate = self
-        imagePicker.sourceType = UIImagePickerController.SourceType.camera
-        imagePicker.allowsEditing = false
-
     }
 
-    override func viewDidAppear(_ animated: Bool) {
-        self.present(imagePicker, animated: true, completion: nil)
+    func showImagePicker() {
+        if !imagePicker.isBeingPresented {
+            imagePicker.delegate = self
+            imagePicker.sourceType = UIImagePickerController.SourceType.camera
+            imagePicker.allowsEditing = false
+            self.present(imagePicker, animated: true, completion: nil)
+        }
     }
-
-
+    
+    func dismissImagePicker() {
+        if imagePicker.isBeingPresented {
+            imagePicker.dismiss(animated: true, completion: nil)
+        }
+    }
 }
 extension ViewController: UIImagePickerControllerDelegate {
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
@@ -37,9 +41,10 @@ extension ViewController: UIImagePickerControllerDelegate {
         
         let ofUrl = "omnifocus:///add?name=MyImage&attachment-name=img.png&attachment=" + imageString
         
-        UIApplication.shared.open(URL(string: ofUrl)!)
+        dismiss(animated: true) {
+            UIApplication.shared.open(URL(string: ofUrl)!)
+        }
     }
-    
 }
 extension ViewController : UINavigationControllerDelegate {
     
