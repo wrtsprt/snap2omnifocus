@@ -193,13 +193,16 @@
 				TargetAttributes = {
 					2DAD3A0E21B9B3390081A817 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1140;
 					};
 					2DAD3A2221B9B33B0081A817 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1140;
 						TestTargetID = 2DAD3A0E21B9B3390081A817;
 					};
 					2DAD3A2D21B9B33B0081A817 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1140;
 						TestTargetID = 2DAD3A0E21B9B3390081A817;
 					};
 				};
@@ -432,6 +435,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E36FEKE8GY;
 				INFOPLIST_FILE = Snap2Omnifocus/Info.plist;
@@ -441,7 +445,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.wrtsprt.Snap2Omnifocus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -450,6 +455,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E36FEKE8GY;
 				INFOPLIST_FILE = Snap2Omnifocus/Info.plist;
@@ -459,7 +465,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.wrtsprt.Snap2Omnifocus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -479,7 +486,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.wrtsprt.Snap2OmnifocusTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Snap2Omnifocus.app/Snap2Omnifocus";
 			};
@@ -500,7 +507,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.wrtsprt.Snap2OmnifocusTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Snap2Omnifocus.app/Snap2Omnifocus";
 			};
@@ -520,7 +527,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.wrtsprt.Snap2OmnifocusUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Snap2Omnifocus;
 			};
@@ -540,7 +547,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.wrtsprt.Snap2OmnifocusUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Snap2Omnifocus;
 			};
